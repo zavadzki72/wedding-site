@@ -1,0 +1,575 @@
+.gift-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.gift_title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gift_title h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+}
+
+.gift_title p {
+  font-size: 1.1rem;
+  color: var(--gray);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cart-page-container, .payment-status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--ligth_blue);
+  font-family: "Cormorant Garamond", serif;
+  padding: 2rem;
+}
+
+.cart-card, .payment-status-card {
+  background-color: white;
+  padding: 3rem 4rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(84, 118, 156, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  border-top: 4px solid var(--gold);
+  position: relative;
+}
+
+.back-to-gifts-link {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  text-decoration: none;
+  color: var(--gray);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s;
+}
+
+.back-to-gifts-link:hover {
+  color: var(--dark_blue);
+}
+
+.payment-status-card i {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.payment-status-card h2 {
+  font-size: 2.5rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.payment-status-card p {
+  font-size: 1.2rem;
+  color: var(--gray);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.button.primary {
+    background-color: var(--dark_blue);
+    color: var(--white);
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid var(--dark_blue);
+    cursor: pointer;
+}
+
+.button.primary:hover {
+    background-color: #3e5a7a;
+    border-color: #3e5a7a;
+    transform: translateY(-2px);
+}
+
+.gift-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.search-input, .category-select {
+  padding: 12px 16px;
+  border-radius: 50px;
+  border: 1px solid #e0eaf1;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+.search-input {
+  flex-grow: 1;
+  min-width: 250px;
+}
+
+.category-select {
+  flex-grow: 0.5;
+  min-width: 200px;
+}
+
+.gifts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.gift-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(84, 118, 156, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gift-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(84, 118, 156, 0.15);
+}
+
+.gift-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.gift-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.gift-card:hover .gift-card-image img {
+  transform: scale(1.05);
+}
+
+.gift-card-content {
+  padding: 1.5rem;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.gift-card-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+  flex-grow: 1;
+}
+
+.gift-card-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  font-family: "Libertinus Serif Display", system-ui;
+}
+
+.gift-card-actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.button.primary {
+    background-color: var(--dark_blue);
+    color: var(--white);
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid var(--dark_blue);
+    cursor: pointer;
+}
+
+.button.primary:hover {
+    background-color: #3e5a7a;
+    border-color: #3e5a7a;
+    transform: translateY(-2px);
+}
+
+.gift-card-actions .button {
+  border-radius: 50px;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+}
+
+.button.secondary {
+  background-color: #f1f3f5;
+  color: var(--gray);
+  border-color: #f1f3f5;
+  cursor: not-allowed;
+}
+
+.button.tertiary {
+  background-color: transparent;
+  color: var(--dark_blue);
+  border: 2px solid var(--dark_blue);
+  display: inline-block;
+}
+
+.button.tertiary:hover {
+  background-color: var(--ligth_blue);
+}
+
+.button.remove {
+  background-color: transparent;
+  color: #d93025;
+  border: 2px solid #f0b8b3;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.button.remove:hover {
+  background-color: #ffe3e3;
+  border-color: #d93025;
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 1.2rem;
+  color: var(--gold);
+  margin-left: 2rem;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: var(--gold);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .gift-filters {
+    flex-direction: column;
+  }
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 0.5rem;
+}
+
+.pagination-button {
+  background-color: var(--white);
+  border: 1px solid #e0eaf1;
+  color: var(--dark_blue);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.pagination-button:hover {
+  background-color: var(--ligth_blue);
+  border-color: var(--gold);
+}
+
+.pagination-button.active {
+  background-color: var(--dark_blue);
+  color: var(--white);
+  border-color: var(--dark_blue);
+}
+
+.cart-card h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  color: var(--dark);
+  margin-bottom: 2.5rem;
+  margin-top: 3rem;
+}
+
+.empty-cart {
+  padding: 2rem 0;
+}
+
+.empty-cart p {
+  font-size: 1.2rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+
+.cart-content-wrapper {
+  display: flex;
+  gap: 2rem;
+  text-align: left;
+}
+
+.cart-items-list {
+  flex: 1.5;
+  border-right: 1px solid #e0eaf1;
+  padding-right: 2rem;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0eaf1;
+}
+.cart-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-name {
+  font-weight: 600;
+  color: var(--dark);
+  font-size: 1.1rem;
+}
+
+.cart-item-price {
+  color: var(--gray);
+  font-size: 1rem;
+  font-family: "Libertinus Serif Display", system-ui;
+}
+
+.cart-item-remove {
+  background: none;
+  border: none;
+  color: var(--gray);
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.cart-summary-and-form {
+  flex: 1;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--ligth_blue);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.cart-summary p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.cart-summary span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  font-family: "Libertinus Serif Display", system-ui;
+}
+
+.cart-form h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+}
+
+.cart-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.cart-form label {
+  display: block;
+  font-weight: 600;
+  color: var(--dark_blue);
+  margin-bottom: 0.5rem;
+}
+
+.cart-form input, .cart-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.cart-form .button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.form-error {
+  color: #dc3545;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .cart-content-wrapper {
+    flex-direction: column;
+  }
+  .cart-items-list {
+    border-right: none;
+    border-bottom: 1px solid #e0eaf1;
+    padding-right: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.payment-status-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--ligth_blue);
+  padding: 2rem;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.payment-status-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(84, 118, 156, 0.15);
+  padding: 3rem 4rem;
+  text-align: center;
+  max-width: 550px;
+  width: 100%;
+  border-top: 4px solid var(--gold);
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.payment-status-card i {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  animation: bounceIn 1s ease-out;
+}
+
+.payment-status-card h2 {
+  font-size: 2.5rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.payment-status-card p {
+  font-size: 1.2rem;
+  color: var(--gray);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.payment-status-card .button.primary {
+  background-color: var(--dark_blue);
+  color: var(--white);
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: 2px solid var(--dark_blue);
+  cursor: pointer;
+}
+
+.payment-status-card .button.primary:hover {
+  background-color: #3e5a7a;
+  border-color: #3e5a7a;
+  transform: translateY(-2px);
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+    .payment-status-card {
+        padding: 2rem 1.5rem;
+    }
+    .payment-status-card h2 {
+        font-size: 2rem;
+    }
+    .payment-status-card p {
+        font-size: 1rem;
+    }
+}
